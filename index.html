@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">✨ Random Quote Generator</h1>
+      <p class="subtitle">Inspire yourself with daily wisdom</p>
+    </header>
+
+    <div class="quote-container">
+      <div class="quote-box">
+        <div class="quote-content">
+          <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-4.716-5-7-5M21 21c-3 0-7-1-7-8V5c0-1.25 4.716-5 7-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p id="quote" class="quote-text">Click the button to get inspired</p>
+          <h3 id="author" class="quote-author"></h3>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-primary" onclick="generateQuote()">🎲 Get New Quote</button>
+        <button class="btn btn-secondary" onclick="copyToClipboard()">📋 Copy Quote</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
